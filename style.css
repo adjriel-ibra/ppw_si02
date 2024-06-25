@@ -1,0 +1,79 @@
+.index {
+  background-color: #240750;
+  background-image: url(rental.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  background-color: #344c64;
+}
+/* .bg {
+  margin-top: 100px;
+} */
+.tulis {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #57a6a1;
+}
+.footer {
+  margin-top: 180px;
+}
+.varian {
+  background-image: url(boot-aset/bgvarian.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  filter: grayscale(50%);
+}
+.card {
+  background-color: rgba(225, 225, 225, 50%);
+  transition: 0.5s;
+  filter: grayscale(100%);
+}
+.card:hover {
+  box-shadow: 0 0 10px 0 #85d8ef inset, 0 0 20px 2px #85d8ef;
+  transition: 0.5s;
+  filter: none;
+}
+.btn:hover {
+  filter: none;
+  box-shadow: 0 0 10px 0 #02c8ff inset, 0 0 20px 2px #00a8d7;
+  border: 3px solid #00a8d7;
+  transition: 0.5s;
+  color: #0004ff;
+  background-color: aquamarine;
+}
+.btn {
+  transition: 0.5s;
+}
+.gmbr:hover {
+  width: 350px;
+  transition: 0.5s;
+}
+.gmbr {
+  transition: 0.5s;
+}
+.navbar-toggle-icon {
+  display: flex;
+  justify-content: end;
+}
+.home{
+  background-image: url(boot-aset/bg\ mobil\ 2.jpg);
+}
+.bg-pesan {
+  background-color: #008ba0a2;
+}
+.pesan {
+  background-image: url(boot-aset/bg\ mobil\ 3.jpg);
+  background-size: cover;
+}
+.atur-carousel {
+  width: 50%;
+}
+.footer {
+  display: flex;
+  align-items: end;
+}
