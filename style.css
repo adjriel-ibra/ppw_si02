@@ -7,6 +7,10 @@
 nav {
   background-color: #344c64;
 }
+nav title {
+  color: #b3e2a7;
+}
+
 /* .bg {
   margin-top: 100px;
 } */
@@ -25,9 +29,9 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body {
+/* body {
   filter: grayscale(50%);
-}
+} */
 .card {
   background-color: rgba(225, 225, 225, 50%);
   transition: 0.5s;
@@ -43,8 +47,22 @@ body {
   box-shadow: 0 0 10px 0 #02c8ff inset, 0 0 20px 2px #00a8d7;
   border: 3px solid #00a8d7;
   transition: 0.5s;
-  color: #0004ff;
+  color: #000000;
   background-color: aquamarine;
+}
+a {
+  text-decoration: none;
+}
+.btn-home {
+  background-color: #6295a2;
+}
+.btn-home:hover {
+  filter: none;
+  box-shadow: 0 0 10px 0 #02c8ff inset, 0 0 20px 2px #00a8d7;
+  border: 3px solid #00a8d7;
+  transition: 0.5s;
+  color: #000000;
+  background-color: #37B7C3;
 }
 .btn {
   transition: 0.5s;
@@ -60,20 +78,40 @@ body {
   display: flex;
   justify-content: end;
 }
-.home{
+.home {
   background-image: url(boot-aset/bg\ mobil\ 2.jpg);
+  background-repeat: no-repeat;
 }
 .bg-pesan {
-  background-color: #008ba0a2;
+  background-color: #6295a2df;
 }
 .pesan {
   background-image: url(boot-aset/bg\ mobil\ 3.jpg);
   background-size: cover;
 }
 .atur-carousel {
+  margin-top: 3rem;
   width: 50%;
+}
+.form-txt {
+  color: #57a6a1;
 }
 .footer {
   display: flex;
   align-items: end;
+}
+.up {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 3rem;
+  cursor: pointer;
+  color: #344c64;
+  mix-blend-mode: difference;
+}
+@media (max-width: 450px) {
+  .atur-carousel {
+    width: 100%;
+  }
 }

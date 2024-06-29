@@ -4,6 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sewa Sini</title>
+    <script>
+      function validasi(form) {
+        if (form.tempat.value == "") {
+          alert("anda belum mengisikan Tempat Pengambilan?");
+          form.tempat.focus();
+          return false;
+        }
+        if (form.ambil.value == "") {
+          alert("anda belum mengisikan tanggal ambil?");
+          form.ambil.focus();
+          return false;
+        }
+        if (form.kembali.value == "") {
+          alert("anda belum mengisikan tanggal kembali?");
+          form.kembali.focus();
+          return false;
+        }
+        if (form.nama.value == "") {
+          alert("anda belum mengisikan nama?");
+          form.nama.focus();
+          return false;
+        }
+        if (form.telp.value == "") {
+          alert("anda belum mengisikan no.telp?");
+          form.telp.focus();
+          return false;
+        }
+        if (form.mobil.option == selected){
+          alert("silakan pilih mobil");
+          form.mobil.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -48,14 +83,22 @@
       </div>
     </nav>
     <!-- body -->
-    <div class="bg form row col-sm-7 container mt-5">
+    <div class="bg form row col-sm-7 container mt-5 mx-3 card">
+      <div class="ms-4 mt-4 container form-txt">
+        <h2><b>Form Pemesanan</b></h2>
+      </div>
       <div
-        class="container d-flex justify-content-center align-items-center pb-5 mx-3 my-5"
+        class="container d-flex justify-content-center align-items-center pb-5 mx-3 mt-5"
       >
-        <form action="POST" class="row my-5">
+        <form
+          method="POST"
+          action="#"
+          onsubmit="return validasi(this)"
+          class="row my-5"
+        >
           <div class="col-12 col-sm-6 mb-3">
             <select class="form-select rounded-pill">
-              <option selected>Pilih Mobil</option>
+              <option id="mobil" name="mobil" selected>Pilih Mobil</option>
               <option value="1">honda-brio</option>
               <option value="2">toyota-avanza</option>
               <option value="3">suzuki-ertiga</option>
@@ -124,13 +167,13 @@
           </div>
         </form>
       </div>
-      <footer class="footer">
-        <p>
-          &copy; 2024 Challage Pengenalan Perancangan Web | Adjriel Ibra -
-          23.12.2859
-        </p>
-      </footer>
     </div>
+    <footer class="footer container">
+      <p>
+        &copy; 2024 Challage Pengenalan Perancangan Web | Adjriel Ibra -
+        23.12.2859
+      </p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
